@@ -1,16 +1,17 @@
-from personaje import Jugador, Enemigo
+import random
+from personaje import Humano, Monstruo
 from arma import Espada, Arco
 
 class Juego:
-    def __init__(self):
-        self.jugador = Jugador("Steve", Espada())
+    def __init__(self, inventario):
+        self.jugador = Humano("Steve", inventario)
         self.enemigos = self.generar_enemigos()
 
     def generar_enemigos(self):
         enemigos = []
         nombres = ["Creeper", "Skeleton", "Zombie", "Enderman", "Spider", "Witch", "Cave Spider", "Slime", "Guardian", "Ghast"]
         for i in range(10):
-            enemigos.append(Enemigo(nombres[i], "Habilidad especial"))
+            enemigos.append(Monstruo(nombres[i], None))
         return enemigos
 
     def iniciar_combate(self):
@@ -42,6 +43,8 @@ class Juego:
             self.jugador.cambiar_arma(Arco())
         elif accion == "3":
             self.jugador.usar_habilidad_especial(self.enemigo)
+        elif accion == "4":
+            self.jugador.inventario.mostrar_inventario()
         else:
             print("Acción inválida. Se omite el turno del jugador.")
 
@@ -50,6 +53,7 @@ class Juego:
         print("1. Atacar")
         print("2. Cambiar de arma")
         print("3. Usar habilidad especial")
+        print("4. Mostrar inventario")
         return input("Ingrese el número de la acción que desea realizar: ")
 
     def actualizar_estado(self):

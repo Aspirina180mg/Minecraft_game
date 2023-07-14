@@ -15,5 +15,3 @@ class Espada(Arma):
 class Arco(Arma):
     def __init__(self):
         super().__init__("Arco", random.randint(3, 7))
-
-# Otras subclases de Arma según los requisitos del juego
