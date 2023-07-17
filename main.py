@@ -11,67 +11,35 @@ if __name__ == "__main__":
 
 
 '''
-En el mundo de Minecraft, se ha desatado una feroz batalla entre un valiente jugador y un poderoso
-monstruo. El jugador, llamado Steve, está equipado con un arma especial, mientras que el monstruo,
-un aterrador Creeper, se prepara para atacar.
+En el mundo de Minecraft, se ha desatado una feroz batalla entre un valiente jugador y un poderoso monstruo. El jugador, llamado Steve, está equipado con un arma especial, mientras que el monstruo, un aterrador Creeper, se prepara para atacar.
+El jugador tiene la capacidad de moverse en diferentes direcciones y usar una habilidad única para enfrentar a los enemigos. Por otro lado, el monstruo tiene la capacidad de rugir para aterrorizar a sus oponentes.
+Durante el combate, tanto el jugador como el monstruo podrán atacar al oponente. Cada ataque reducirá los puntos de vida del objetivo. Además, las armas y habilidades especiales tendrán un poder adicional que se sumará al daño infligido.
+Además de los puntos de vida, tanto el jugador como el monstruo tienen puntos y experiencia. Los puntos representan la puntuación acumulada por cada uno, mientras que la experiencia representa la progresión del jugador en el juego. Tanto los puntos como la experiencia pueden ser modificados por diferentes acciones, como derrotar a un enemigo o completar tareas especiales.
+El objetivo del problema es simular un combate entre el jugador y el monstruo, teniendo en cuenta los modificadores de vida, puntos y experiencia. Deberás implementar las clases y métodos necesarios para llevar a cabo el combate, calcular el daño infligido por cada ataque y aplicar los modificadores correspondientes. Además, debes mostrar los mensajes de acción relevantes durante el combate, como movimientos, ataques y resultados de los enfrentamientos.
 
-El jugador tiene la capacidad de moverse en diferentes direcciones y usar una habilidad única para
-enfrentar a los enemigos. Por otro lado, el monstruo tiene la capacidad de rugir para aterrorizar a
-sus oponentes.
-
-Durante el combate, tanto el jugador como el monstruo podrán atacar al oponente. Cada ataque
-reducirá los puntos de vida del objetivo. Además, las armas y habilidades especiales tendrán un
-poder adicional que se sumará al daño infligido.
-
-Además de los puntos de vida, tanto el jugador como el monstruo tienen puntos y experiencia. Los
-puntos representan la puntuación acumulada por cada uno, mientras que la experiencia representa la
-progresión del jugador en el juego. Tanto los puntos como la experiencia pueden ser modificados por
-diferentes acciones, como derrotar a un enemigo o completar tareas especiales.
-
-El objetivo del problema es simular un combate entre el jugador y el monstruo, teniendo en cuenta los 
-modificadores de vida, puntos y experiencia. Deberás implementar las clases y métodos necesarios para 
-llevar a cabo el combate, calcular el daño infligido por cada ataque y aplicar los modificadores 
-correspondientes. Además, debes mostrar los mensajes de acción relevantes durante el combate, como
-movimientos, ataques y resultados de los enfrentamientos.
-
-Recuerda tener en cuenta los conceptos de herencia, polimorfismo, encapsulamiento y abstracción en tu 
-implementación.
-Un vez lo saque, nos quedamos con lo que hay
-Ooh ya me vine
-Puta justo estoy almorzando
-las armas deben ser aleatroreas en cada inicio de programa, por ende cada arma tomara puntos de danhos
-diferentes, ademas que los niveles de xp de cada personaje al iniciar el combate tambien deben ser
-diferentes
-Qué tan interactivo quieres que sea?
+Recuerda tener en cuenta los conceptos de herencia, polimorfismo, encapsulamiento y abstracción en tu implementación.
+las armas deben ser aleatroreas en cada inicio de programa, por ende cada arma tomara puntos de danhos diferentes, ademas que los niveles de xp de cada personaje al iniciar el combate tambien deben ser diferentes
 la idea es que si bien no pedire que el combate sea manejado por una persona si debe ser dinamico y
 divertido
 puede que en un enfrentamiento gane Steve y en otro gane el Creeper
 eso lo dira el nivel de cada personaje, el nivel de las armas y los pv que se le asignen a cada personaje
 la idea es que si Steve gana pueda seguir peleando hasta con un maximo de 4 enemigos aleatorios
-Con cierto grado de aleatoriedad
-exacto
-Me gusta
-Ni más preguntas por mi parte
 Hablas de movimiento
 Steve en nivel 1 constara con 10 puntos de vida, el creeper constara con 8 pv
-Osea el daño y las armas tengo una idea de cómo hacerlo pero a qué te refieres con movimiento en diferentes
-direcciones?
-También mencionas sobre varios enemigos, está bien si Steve puede mandar a luchar a varios mini Stevens y
-el mounstro Creeper a su vez mandar a varios mini Creepers
-por ejemplo: en el primer turno steve ataca, el creeper tambien, siguiente movimiento el steve se mueve 2
-cuadros ycambia a un arco, el creeper dependiendo del movimiento que tenga segun su nivel se puede mover o
-atacar o defenderse
-se entiende?
-Claro
-dare los stat bases de cada personaje, y las variaciones de los niveles.
-Yo tampoco tengo más preguntas por ahora, me gusto mucho este ejercicio
-stev consta de 10 puntos de vida, 1 de movimiento 1, empieza con una espada de madera
-el creeper tiene 9 puntos de vida, 1 de movimiento y el grito
-por cada nivel steve sube 5 de vida y 1 de movimiento, cambiando la espada cada 2 niveles
-el enemigo cada nivele sube 3 puntos de vida y cada dos niveles sube 1 punto de movimiento
-la idea es que si yo empiezo el programa steve pueda aparecer con nivel 10 o con nivel 1, eso lo determinan
-con random
-lo mismo aplica para el creeper
+por ejemplo: en el primer turno steve ataca, el creeper tambien, siguiente movimiento el steve se mueve 2 cuadros y cambia a un arco, el creeper dependiendo del movimiento que tenga segun su nivel se puede mover o atacar o defenderse se entiende?
+
+dare los stat bases de cada personaje, y las variaciones 
+de los niveles.
+stev consta de 10 puntos de vida, 1 de movimiento 1, 
+empieza con una espada de madera el creeper tiene 9 
+puntos de vida, 1 de movimiento y el grito por cada 
+nivel steve sube 5 de vida y 1 de movimiento, cambiando 
+la espada cada 2 niveles el enemigo cada nivele sube 3 
+puntos de vida y cada dos niveles sube 1 punto de 
+movimiento la idea es que si yo empiezo el programa 
+steve pueda aparecer con nivel 10 o con nivel 1, eso lo 
+determinan con random, lo mismo aplica para el creeper
+
 Mm, y puedo elegir entre atacar o moverme
 solo por weviar, el nivel inicial no puede superar el nivel 5
 ataque, defensa, movimiento
