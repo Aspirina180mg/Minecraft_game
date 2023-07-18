@@ -1,4 +1,7 @@
-class Monstruo(Personale):
+from personaje import Personaje
+
+
+class Monstruo(Personaje):
     def __init__(self, nombre, puntosDeVida, puntos, experiencia, nivel, ataque, defensa, movimiento, arma, armadura, item):
         super().__init__(self, nombre, puntosDeVida, puntos, experiencia, nivel, ataque, defensa, movimiento, arma, armadura, item)        
         self.puntosDeVida = 9

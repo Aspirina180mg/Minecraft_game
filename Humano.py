@@ -1,4 +1,7 @@
-class Humano(Personale):
+from personaje import Personaje
+
+
+class Humano(Personaje):
     def __init__(self, nombre, puntosDeVida, puntos, experiencia, nivel, ataque, defensa, movimiento, arma, armadura, item):
         super().__init__(self, nombre, puntosDeVida, puntos, experiencia, nivel, ataque, defensa, movimiento, arma, armadura, item)        
         self.puntosDeVida = 10
