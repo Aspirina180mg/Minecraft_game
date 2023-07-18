@@ -1,42 +1,31 @@
-import random
-
 class Personaje:
-    def __init__(self, nombre, puntos_de_vida, movimiento, inventario):
+    def __init__(self, nombre, puntosDeVida, puntos, experiencia, nivel, ataque, defensa, movimiento, arma, armadura, item):
         self.nombre = nombre
-        self.puntos_de_vida = puntos_de_vida
+        self.puntosDeVida = puntosDeVida
+        self.puntos = puntos
+        self.experiencia = experiencia
+        self.nivel = nivel
+        self.ataque = ataque
+        self.defensa = defensa
         self.movimiento = movimiento
-        self.nivel = random.randint(1, 5)
-        self.puntos = 0
-        self.experiencia = 0
-        self.inventario = inventario
+        self.arma = arma
+        self.armadura = armadura
+        self.item = item
 
-    def atacar(self, objetivo):
+    def atacar(self):
         pass
 
-    def recibir_dano(self, dano):
+    def recibirAtaque(self,danho):
         pass
 
-    def ganar_puntos(self, puntos):
-        self.puntos += puntos
-
-    def ganar_experiencia(self, experiencia):
-        self.experiencia += experiencia
-
-    def mostrar_estado(self):
+    def mover(self):
         pass
 
-class Humano(Personaje):
-    def __init__(self, nombre, inventario):
-        super().__init__(nombre, 10, 1, inventario)
+    def habilidad(self):
+        pass
 
-    def usar_habilidad_especial(self, enemigo):
-        print(f"{self.nombre} usa su habilidad especial contra {enemigo.nombre}.")
-        # Implementar lógica de habilidad especial
+    def cosnseguirXp(self, cantidad):
+        pass
 
-class Monstruo(Personaje):
-    def __init__(self, nombre, inventario):
-        super().__init__(nombre, 9, 1, inventario)
-
-    def usar_habilidad_especial(self, jugador):
-        print(f"{self.nombre} usa su habilidad especial contra {jugador.nombre}.")
-        # Implementar lógica de habilidad especial
+    def derrota(self):
+        pass
