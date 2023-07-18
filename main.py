@@ -8,8 +8,7 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
+    
 '''
 En el mundo de Minecraft, se ha desatado una feroz batalla entre un valiente jugador y un poderoso monstruo. El jugador, llamado Steve, está equipado con un arma especial, mientras que el monstruo, un aterrador Creeper, se prepara para atacar.
 El jugador tiene la capacidad de moverse en diferentes direcciones y usar una habilidad única para enfrentar a los enemigos. Por otro lado, el monstruo tiene la capacidad de rugir para aterrorizar a sus oponentes.
