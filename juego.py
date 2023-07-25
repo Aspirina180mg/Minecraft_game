@@ -1,3 +1,4 @@
+#Stub
 import random
 from personaje import Humano, Monstruo
 from arma import Espada, Arco

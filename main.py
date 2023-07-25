@@ -1,3 +1,4 @@
+#stub
 from juego import Juego
 from inventario import Inventario
 
