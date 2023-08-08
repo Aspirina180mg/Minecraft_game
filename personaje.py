@@ -1,5 +1,6 @@
-class Personaje:    #? clase principal
-    def __init__(self, nombre, puntosDeVida, puntos, experiencia, nivel, ataque, defensa, movimiento, arma, armadura, item):
+class Personaje:  # ? clase principal
+    def __init__(self, nombre, puntosDeVida, puntos, experiencia, nivel, 
+                 ataque, defensa, movimiento, arma, armadura, item):
         self.nombre = nombre
         self.puntosDeVida = puntosDeVida
         self.puntos = puntos
@@ -12,10 +13,12 @@ class Personaje:    #? clase principal
         self.armadura = armadura
         self.item = item
 
-    def atacar(self):
-        pass
+#Este es un comentario
 
-    def recibirAtaque(self,danho):
+
+    def atacar(self): pass
+
+    def recibirAtaque(self, danho):
         pass
 
     def mover(self):
@@ -30,9 +33,11 @@ class Personaje:    #? clase principal
     def derrota(self):
         pass
 
-class Humano(Personaje):    #? clase hija
+
+class Humano(Personaje):  # ? clase hija
     def __init__(self, nombre, puntosDeVida, puntos, experiencia, nivel, ataque, defensa, movimiento, arma, armadura, item):
-        super().__init__(self, nombre, puntosDeVida, puntos, experiencia, nivel, ataque, defensa, movimiento, arma, armadura, item)        
+        super().__init__(self, nombre, puntosDeVida, puntos, experiencia,
+                         nivel, ataque, defensa, movimiento, arma, armadura, item)
         self.puntosDeVida = 10
         self.experiencia = 0
         self.nivel = 1
@@ -42,7 +47,7 @@ class Humano(Personaje):    #? clase hija
     def atacar(self):
         pass
 
-    def recibirAtaque(self,danho):
+    def recibirAtaque(self, danho):
         pass
 
     def mover(self):
@@ -57,19 +62,27 @@ class Humano(Personaje):    #? clase hija
     def derrota(self):
         pass
 
-class Monstruo(Personaje):  #? clase hija
-    def __init__(self, nombre, puntosDeVida, puntos, experiencia, nivel, ataque, defensa, movimiento, arma, armadura, item):
-        super().__init__(self, nombre, puntosDeVida, puntos, experiencia, nivel, ataque, defensa, movimiento, arma, armadura, item)        
+
+#? Peer Review - no se hizo cambio por ser poco práctico y no aportar optimización
+
+
+class Monstruo(Personaje):  # ? clase hija
+    def __init__(self, nombre, puntosDeVida, puntos, experiencia, nivel,
+                 ataque, defensa, movimiento, arma, armadura, item):
+        super().__init__(self, nombre, puntosDeVida, puntos, experiencia,
+                         nivel, ataque, defensa, movimiento, arma, armadura,
+                         item)
         self.puntosDeVida = 9
         self.puntos = 100
         self.nivel = 1
         self.defensa = 1
         self.movimiento = 1
 
+
     def atacar(self):
         pass
 
-    def recibirAtaque(self,danho):
+    def recibirAtaque(self, danho):
         pass
 
     def mover(self):
