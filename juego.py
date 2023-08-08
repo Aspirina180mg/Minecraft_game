@@ -1,7 +1,8 @@
-#Stub
+# Stub
 import random
 from personaje import Humano, Monstruo
 from arma import Espada, Arco
+
 
 class Juego:
     def __init__(self, inventario):
@@ -10,7 +11,8 @@ class Juego:
 
     def generar_enemigos(self):
         enemigos = []
-        nombres = ["Creeper", "Skeleton", "Zombie", "Enderman", "Spider", "Witch", "Cave Spider", "Slime", "Guardian", "Ghast"]
+        nombres = ["Creeper", "Skeleton", "Zombie", "Enderman",
+                   "Spider", "Witch", "Cave Spider", "Slime", "Guardian", "Ghast"]
         for i in range(10):
             enemigos.append(Monstruo(nombres[i], None))
         return enemigos
@@ -39,12 +41,14 @@ class Juego:
     def realizar_accion(self):
         accion = self.obtener_accion()
         if accion == "1":
-            enemigo = self.enemigos[self.turno // 2]  # Accede al enemigo correspondiente al turno
+            # Accede al enemigo correspondiente al turno
+            enemigo = self.enemigos[self.turno // 2]
             self.jugador.atacar(enemigo)
         elif accion == "2":
             self.jugador.cambiar_arma(Arco())
         elif accion == "3":
-            enemigo = self.enemigos[self.turno // 2]  # Accede al enemigo correspondiente al turno
+            # Accede al enemigo correspondiente al turno
+            enemigo = self.enemigos[self.turno // 2]
             self.jugador.usar_habilidad_especial(enemigo)
         elif accion == "4":
             self.jugador.inventario.mostrar_inventario()

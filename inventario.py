@@ -1,7 +1,9 @@
-#import item
+# import item
 class Inventario:
     def __init__(self):
         self.items = []
+# comentario de prueba, debería ser demasiado largo para el linte, a ver si
+# flake 8 me dice algo, alargaré otro poco para forzar un error o alto
 
     def agregar_item(self, item):
         if isinstance(item, Arma) or isinstance(item, Armadura):
@@ -54,8 +56,10 @@ class Arma(Item):
 
 
 class Armadura(Item):
-    def __init__(self, nombre, tipo, defensa, durabilidad):
-        super().__init__(nombre, 1, None)  # Se establece cantidad=1 para armaduras
+    def __init__(self, nombre, tipo, defensa,
+                 durabilidad):
+        super().__init__(nombre, 1, None)  # Se establece cantidad=1 para
+        # armaduras
         self.tipo = tipo
         self.defensa = defensa
         self.durabilidad = durabilidad
